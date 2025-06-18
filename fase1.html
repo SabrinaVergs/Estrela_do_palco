@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jogo - Fase 1</title>
+    <link rel="icon" type="image/png" href="./IMG/bailarina.png">
+    <link rel="stylesheet" href="./CSS/s.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha sua bailarina</h1>
+
+        <div class="fase1-content">
+            <img id="bailarina" src="img/bailarina.png" alt="Bailarina" />
+
+            <div class="botoes">
+                <h2>Escolha a roupa:</h2>
+                <button onclick="escolher('bailarina', 'img/bailarina treino1.png')">Roupa 1</button>
+                <button onclick="escolher('bailarina', 'img/bailarina treino2.png')">Roupa 2</button>
+                <button onclick="escolher('bailarina', 'img/bailarina treino3.png')">Roupa 3</button>
+
+                <h2>Escolha o cenário:</h2>
+                <button onclick="escolherCenario('img/cenario_aula1.png')">Sala Moderna</button>
+                <button onclick="escolherCenario('img/cenario_aula2.jpg')">Sala Clássica</button>
+                <button onclick="escolherCenario('img/cenario_aula3.png')">Jardim</button>
+
+                <button onclick="window.location.href='fase2.html'">Próxima Fase</button>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/s.js"></script>
+</body>
+</html>
